@@ -1,0 +1,3 @@
+# Enter the real values only in Cloudflare encrypted secrets.
+OPENAI_API_KEY=
+APP_TOKEN=

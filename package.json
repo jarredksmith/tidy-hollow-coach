@@ -1,0 +1,25 @@
+{
+  "name": "tidy-hollow-coach",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "npx wrangler@4 deploy"
+  },
+  "cloudflare": {
+    "bindings": {
+      "OPENAI_API_KEY": {
+        "description": "Your OpenAI API key from https://platform.openai.com/api-keys. API billing must be enabled."
+      },
+      "APP_TOKEN": {
+        "description": "Generate a household token in Tidy Hollow Settings, copy it here, and save the same token in the app. At least 32 characters."
+      },
+      "ALLOWED_ORIGIN": {
+        "description": "Keep https://jarredksmith.github.io for this app. No path or trailing slash."
+      },
+      "OPENAI_MODEL": {
+        "description": "Image-capable OpenAI model; default gpt-4.1-mini."
+      }
+    }
+  }
+}
